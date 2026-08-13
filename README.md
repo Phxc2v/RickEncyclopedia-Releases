@@ -12,7 +12,7 @@
 
 ## Скачать
 
-**[⬇️ Последний выпуск](../../releases/latest)** — архив с программой и базой модов.
+**[⬇️ Последний выпуск](../../releases)** — архив с программой и базой модов.
 
 Распакуйте папку куда угодно и запустите `RickEncyclopedia.exe`.
 
@@ -110,7 +110,7 @@ we cannot check is called out as not known: **"not checked" is not the same as
 
 ## Download
 
-**[⬇️ Latest release](../../releases/latest)** — the program together with the mod
+**[⬇️ Latest release](../../releases)** — the program together with the mod
 database.
 
 Unpack the folder anywhere and run `RickEncyclopedia.exe`. There is nothing to install:
