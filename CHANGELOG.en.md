@@ -8,6 +8,217 @@
 
 ## Unpublished
 
+## 0.8.5 — 18.08.2026
+
+### Donations added
+
+You can now support the encyclopedia: a "♥ Donate" chip in the header and a link at the bottom open a window with a choice — pay by card on a normal page or through Telegram, plus a copyable address. Donating unlocks nothing: every feature is and stays free.
+
+### Subcategories: finding a mod is easier
+
+Every section now has a second level. "Troops" used to be a wall of a thousand mods;
+now you can narrow it to "Mercenaries", "Female units", "New factions" and so on.
+Subcategories show both in the left menu (they expand under the section) and as chips
+above the list. "All" still shows the whole section — nothing is hidden. Translations
+are split by language: Russian, Chinese, Turkish, other.
+
+### Clearer which game versions a mod is built for
+
+The versions section of a mod card was redesigned. It used to be a table with empty
+cells and technical wording. Now each game branch is its own row: a colour-coded
+"works / partial / uncertain / won't run" badge, a plain-language explanation beside
+it, and a "Details" button that opens the full breakdown of what and why.
+
+### Clearer whether a mod runs on your version
+
+The version bar is more honest now. A mod used to be marked "won't run" even when it works
+fine. Now we tell apart: red — will not start; amber — one feature may fail, or uncertain;
+green — no obstacles. False "reds" dropped fivefold.
+
+### Almost everything analysed
+
+We looked inside thousands of mods: 87% now show which game versions they were built for —
+up from under half.
+
+### Looked inside the Nexus mods
+
+We downloaded and unpacked the mod archives from Nexus — for each you can see what it
+changes in the game, which version it targets and what it conflicts with. Descriptions
+and cards in every language.
+
+### What a mod does even without a description
+
+If the author wrote nothing, the card now shows what is inside: "Adds: 260 — settlements,
+13 — troops." That spot used to hold a note saying there was no description.
+
+### You can see when a mod has two cards
+
+Some mods are published under two names — Harmony, for one. Both cards stay (the launcher
+recognises a mod by its folder name), but each now points at the other.
+
+### The full language list
+
+A card now shows both the languages inside the mod and those a separate translation mod
+covers. "Serve as Soldier" used to list Russian alone, though it has twelve translations.
+Languages also stopped appearing twice in search: "KOR" and "KR" were two rows of Korean.
+
+### Clear when a description covers the whole mod
+
+Big mods are published as several parts on one page. The description of such a part now
+says that the text is about the whole mod, not just that piece.
+
+### Real names instead of placeholders
+
+A few mods carried a name from the modder's starter template — "My Example Mod". The name
+now comes from the mod's own page.
+
+### You can see what an add-on is for
+
+Cards marked "Add-on", "Rework" or "Translation" now always say what they belong to.
+If the mod itself is not in the encyclopedia, the card says so — this spot used to be
+empty, leaving no way to tell what was meant.
+
+### The database is protected
+
+The encyclopedia's files can no longer be opened by outside programs: the
+catalogue, its add-ons and the summary are encrypted. Nothing changes for you —
+it opens and works as before.
+
+### "Why this section" is now in your language
+
+Hover over a mod's section and you get a short explanation of why it sits there.
+It used to be Russian only; now it is translated into every language.
+
+### Switching the language redraws the cards at once
+
+You switched the language and the cards stayed in the old one: the list was the
+same, so the grid was never redrawn. The whole result is rebuilt now, whichever
+language you read in.
+
+### French
+
+The encyclopedia now speaks French too — pick it where you pick the other
+languages. Mod descriptions and history are being translated gradually; where
+French is not ready yet, the card shows English.
+
+### Mod history stopped losing entries
+
+For 240 mods part of the history was missing: if the translation lagged behind by
+even one entry, the rest vanished from the list. 355 entries came back, the newest
+ones among them.
+
+### No more repeats in a mod's history
+
+A single date used to carry ten identical lines — "Fully translated.", "Internal
+changes." — which is what happened when one release arrived as several files. Only
+one line stays now, the one that carries the version number.
+
+### "What's new" arrives with the catalogue
+
+The summary used to update only together with the program itself: the catalogue
+grew, but the window still showed last week. Now it arrives as its own small file.
+
+### The language chip is about your language
+
+Cards showed an "RU" chip even when the encyclopedia was in English. It now shows
+your language — "TR", "简中" — and only when the mod files really carry that
+translation.
+
+### Mod history now says what came out
+
+For mods whose author keeps no changelog, the history is now built from file
+releases: "File "Bannerlord Coop Campaign v0.2.1 Client" was released" plus the
+date. That covers 5,480 mods — they used to show only "the mod was updated".
+
+### A translation no longer has a "Translations and variants" tab
+
+You open a translation and it offers you a list of translations — with itself in
+it. Translations no longer carry that tab: the original is shown separately as
+"based on", and that is enough. Affects 2,543 entries.
+
+### "Our projects" section
+
+A separate entry now sits at the very top of the section list — the things we make:
+the RickLauncher, Crash Doctor, RTS Camera Universal, the Russian translation of
+The Old Realms and Lore-Hardcore. Their normal section stays as it was: a mod is
+both in "Interface" and in "Our projects".
+
+### How much of what is in the catalogue
+
+A breakdown now sits under the header — mods, translations, add-ons, tools — and
+the tooltip explains why the list holds fewer cards than mods: translations and
+variants of a mod are folded into its original.
+
+### The database updates in small files
+
+Every catalogue update used to pull the whole 190 MB database. It is downloaded
+once now, and changes arrive as small add-ons — the latest one is 26 MB, not 190.
+
+### A mod was updated — and the card now says so
+
+The summary said "updated by the author", yet the card said nothing about it: the
+"History" tab was hidden whenever the author kept no changelog. The tab is there
+now and tells what is known — when the mod was updated and on which site. It also
+points to where authors sometimes write the details.
+
+### Full mod names in the "What's new" window
+
+A long mod name was cut off with an ellipsis even though there was room below it —
+the row is as tall as the cover anyway. The name now wraps onto a second line,
+just like the description beside it. The window itself is a tenth wider.
+
+### Switching the language now switches everything at once
+
+You switched the language and the cards stayed in the old one until the list was
+reloaded. Everything switches together now: the cards in the catalogue, open mod
+windows, the packs window, the "what's new" summary, the breakdown by kind and the
+footer.
+
+The same goes for the first choice: an answer given while the encyclopedia was
+still starting up used to reach only half the window.
+
+### The language is asked once, on the first run
+
+The encyclopedia opens in English and asks straight away which language you want
+to read it in. The question is not a separate window: the encyclopedia itself dims
+and the choice stands bright in the middle of it. Language names are written in
+those languages — "Русский", "Türkçe", "简体中文".
+
+Your answer is remembered and you will not be asked again. Changed your mind? The
+language is still in Settings.
+
+It used to be guessed from your Windows language, and it guessed wrong both ways.
+
+### Words no longer run together
+
+"42 mods are available for itfrom 43" — the translation had lost the spaces where
+the encyclopedia joins phrases together. All languages were checked at once:
+**1,084 such places**, none left. The phrases themselves were reworded too.
+
+### Russian no longer leaks into the other languages
+
+You picked English, Turkish or Chinese — and the update window, the tooltips, file
+sizes and dates stayed Russian anyway. Everything is translated now: window titles,
+buttons, field hints, update progress ("downloading", "checking signature"), error
+messages, number suffixes and month names in dates.
+
+Numbers became local too: where Russian writes "6,2 млн", English now writes
+"6.2M", and digit separators follow the language you picked.
+
+### Word endings no longer trip up the search
+
+"европ" found Empires of Europe 1100, but "европа" did not — same word. The
+ending no longer matters: "европа", "европы" and "европе" now give the same
+results. Same for "торговля", "экономика", "лошади" — those used to return two
+or three mods instead of a hundred.
+
+### Finds what is called by another word
+
+Type "краш" and Crash Doctor shows up, even though its description says
+"вылеты" (crashes). When your words find very little, the encyclopedia adds what
+you were most likely looking for and says so above the list: "also searched for
+'cras'". Whatever your own words found stays where it was.
+
 ## 0.7.1 — 13.08.2026
 
 ### Search understands Russian
