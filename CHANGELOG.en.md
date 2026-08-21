@@ -8,6 +8,109 @@
 
 ## Unpublished
 
+## 0.9.2 — 21.08.2026
+
+### For your game version — the actual mod file
+
+Pick your game version on the left and the card answers straight away: "Your game is
+1.2 → install mod version 1.5.7", with a "works" badge beside it and an "Open file"
+button. The link goes to that very file, not to a page holding fifty others.
+
+This matters most if you stayed on an older game version: many mods have their latest
+build made for 1.4, which simply will not start on 1.2 — but the file you need is
+still there. The encyclopedia now finds it. There are **27,963 such links, up from
+693**.
+
+Every row also shows the mod's own version, which was never displayed before.
+
+### A "Not recommended" banner
+
+Some mods now carry a large red warning on their card: we do not advise installing
+this one, and it says why. We only write what we checked ourselves.
+
+### The author's name is now a link
+
+Click the author's name and you'll see the rest of their mods — their own work first,
+translations after. If an author has only translations, the list says so. The same
+person often publishes under several nicknames; those names are brought together.
+
+### One mod, one card
+
+The very first thing you used to see was two identical "Harmony" cards in a row.
+"Camel Armor", "Dramalord", "Female Troops" and a couple of dozen more doubled up the
+same way. Such cards are now merged: the rest appear inside as other variants of the
+same mod. **Duplicates are down to 10 from 27**, and no record was lost.
+
+### Mod history in your language
+
+About half the lines in a mod's history arrived in hieroglyphs: with a Russian
+interface you could find Chinese or Turkish text there. Fixed.
+
+### Clearer answers on whether a mod works
+
+Game version **1.4.8** has been analysed — everything that worked on 1.4.7 works on
+it too, but now that is checked rather than assumed.
+
+Naval mods were only partly checked: "Shipmaster Reworked", "Live Tides", "Training
+Battles" and other War Sails mods could reach for something your game version does not
+have, and the encyclopedia would not see it. The whole catalogue was re-checked.
+
+Another **379 mods** gained or corrected a game-version mark — some of them now
+honestly say "works on your 1.2" where before we only had the author's word. And 625
+files had false marks removed, where the mod's own version number was being read as a
+game version.
+
+### "Add-on" — and now it says to what
+
+It used to look like this: a card was labelled "Add-on" or "Patch", and nowhere did it
+say which mod that referred to. There were 460 such cards. All were sorted out: for 48
+the mod itself turned up and can be opened straight from the card; for another 304 the
+mod is known by name, so that is what it says, and you can search for it. On 44 the
+label was simply wrong — "WeaponGapFix", "TimeFixer" and the like fix a bug in the
+game itself, not somebody else's mod.
+
+### The encyclopedia is a third lighter
+
+The database went from 310 down to **216 megabytes** — almost a hundred off. Nothing
+was lost: the same mods, the same conflicts, the same descriptions in six languages.
+Downloading and updating is noticeably faster.
+
+### The encyclopedia starts even with no database
+
+Before, when the database file was not where it should be, the encyclopedia showed an
+error and closed — what to do next was left to you. Now it opens and offers to
+download the database itself: one window, one button. And if the file is there but
+cannot be read, it offers to fetch the database again. Your favourites and settings
+survive that.
+
+### Updating finally works the way it should
+
+Three things that could leave an update half-done, or not started at all.
+
+The "What's new" window showed raw markers instead of text. It now reads as text.
+
+If one part of an update failed to download, everything was cancelled — including a
+database that had already arrived. Now whatever did arrive is installed, the part that
+failed is named in the list, and it comes with the next check.
+
+The "What's new" summary could not be updated while the encyclopedia was open. The
+installer now waits for every window to close and checks that the files really landed.
+
+And if an update did fail and you pressed "Retry", the bar no longer jumps straight to
+a hundred percent.
+
+### Small things you can see
+
+Markup that leaked in from author pages has been stripped from descriptions: "hold the
+`[b]Q[/b]` key" now reads "hold the Q key".
+
+116 mods got back descriptions that were missing — French suffered most. On 52 mods
+the caption under the cover was English instead of Turkish. In English, French and
+Turkish, words ran together at phrase joins. All fixed.
+
+Service parts of the launcher itself have been removed from the catalogue — they are
+not mods and have no business there.
+
 ## 0.8.5 — 18.08.2026
 
 ### Donations added
