@@ -28,10 +28,16 @@ patches for it. The results say what each row is: **★ original** — the mod i
 one translations and rebuilds come from; **rebuild** — a re-upload or continuation of
 somebody else's mod; **translation** — a translation and nothing more.
 
-**Search in Russian.** Mods are named in English, but you can look for them in your
-own words: "беременность", "гарнизон", "караван", "осада" all find the mods they
-describe, because the descriptions are ours and written in Russian. Word endings do
-not matter: "европа", "европы" and "европе" give the same results. Typed with the
+**The name in your language, too.** A mod is called `Improved Garrisons`, and right
+under that name, in small type, stands its translation. The name itself stays large —
+that is how the mod is recognised and searched for online — while the translation
+reads at a glance without getting in the way. Six thousand mod names, in all six
+languages of the guide.
+
+**Search in your own language.** Mods are named in English, but you can look for them
+in your own words: "беременность", "гарнизон", "караван", "осада" all find the mods
+they describe, because the descriptions are ours. Search covers all six languages of
+the guide, not just Russian. Word endings do not matter: "европа", "европы" and "европе" give the same results. Typed with the
 wrong keyboard layout ("рфкьщтн") or spelled by ear ("хармони", "краш")? The
 encyclopedia works it out and says above the list what it actually searched for.
 
@@ -101,6 +107,17 @@ The scan's wording is "no obstacle found", not "guaranteed to work". Matching re
 prove the mod will not fall over on a missing piece of the game; but the meaning of a
 surviving piece may have changed, and some of the techniques mods use are invisible to
 the scan entirely. Where we do not know, it says so.
+
+**A verdict comes from reading the files, never from the author's word.** A tag on
+the mod's page says what the author built for, not what the build runs on: a
+five-year-old mod may still be listed "for 1.5". Such branches are marked "not
+checked" until we have read the file itself.
+
+When a mod does not run, the reference names the culprit: not merely "broken", but
+**which part of the mod gets in the way and what it is missing** — "Breaks it:
+CustomSpawns — this game version has no CultureCode". Often the culprit turns out
+to be someone else's mod bundled in by the author; if it has its own page, a hint
+sits next to it to install a fresh copy separately.
 
 Beside every arguable claim sits an **ⓘ** button: it explains where the conclusion came
 from and how firm it is. A guess is never dressed up as a fact.
