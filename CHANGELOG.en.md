@@ -8,6 +8,248 @@
 
 ## Unpublished
 
+## 0.9.4.3 — 26.08.2026
+
+### You can now see which part of a mod breaks the game
+
+The card used to list what a mod was missing: a long list of names from the
+game's code. It never answered the real question — what to do about it.
+
+Now the guilty part is named: "Breaks it: CustomSpawns — this game version has no
+CultureCode". A large mod may have a dozen such parts, one of them breaks, and it
+often turns out to be someone else's mod bundled in by the author — while a
+fresher version of that mod works fine.
+
+### The check now notices missing functions
+
+We used to compare a mod against the game by the names of its parts. If the
+developers removed a whole part, that was visible. If they removed a single
+function inside it, the mod would load, run, and crash later — whenever that
+function was finally needed. The guide said nothing.
+
+Functions are now compared too: we re-read all 16,913 libraries in the catalogue
+and collected two and a half million calls. For 959 mods the breakage is visible
+**only** this way — by part names they looked healthy.
+
+### Less lying in the "works" verdict
+
+Three cases where we wrongly said a mod would run:
+
+* a mod is made of several libraries, one breaks and the rest are fine — that
+  used to be enough for "no obstacles found". The game loads all of them;
+* the author accidentally bundled copies of the game's own files, and we judged
+  the mod by those, though the game uses its own;
+* the mod calls a library that this game version does not ship at all — meaning
+  it brings its own, so there is nothing to blame it for.
+
+### The author's word is no longer a verdict
+
+Authors state on their page which game version they built for. That is useful to
+know, but it is not a check: a five-year-old mod may still be tagged "for 1.5"
+long after it stopped launching there.
+
+Such a tag used to be painted green, on par with our own analysis. Now we say
+"not checked" — which does not mean "does not work", it means we have not got to
+that file yet. The file and its version stay in the card.
+
+### No more handing an old game version a newer file
+
+Libraries like Harmony ship a separate build per game branch: 1.2 needs one, 1.3
+and above another. We were offering players on 1.2 a file with "Game 1.4.6"
+right in its name — and the game complained, rightly.
+
+A file built for a newer game version is no longer offered for an older one. The
+other way round is fine: a build for 1.3 usually runs on 1.5.
+
+### More files actually read
+
+We read mod archives piecemeal straight from the site: only the code and the
+manifest, no need to download the whole thing. But a file whose contents list we
+had looked at — without managing to fetch the code itself — counted as read, and
+never returned to the queue. There were 3,697 of those, and 2,491 had code inside.
+
+Fixed. This round we finished reading 1,656 archives — the ones whose cards were
+showing an unverified author's tag.
+
+Because of this, 1,125 mods received a more cautious rating. They were breaking
+before as well — we simply were not saying so.
+
+## 0.9.3 — 25.08.2026
+
+### You can see what is inside a file
+
+A mod often arrives as one archive containing several folders: three for "Realm of
+Thrones", nine for "More Troops Mod", thirty-six for one Chinese pack. All of them
+must be installed or the mod will not work — and until now the only way to find out
+was to unpack the file.
+
+The file list now says what is inside each one: "3 folders inside: ROT-Content,
+ROT-Map, Bannerlord.GeneralModdingPatches". The full list is under the cursor.
+
+### A warning: this file or that one, not both
+
+Some mods have several files marked as main by the author, while in fact they are
+variants of the same thing: "Diplomacy (e1.5.8)" and "Diplomacy (v1.0.x–v1.2.x)".
+People saw two equally important files and could not tell whether to take both.
+
+Such files are now marked "one of several options". The mark is not a guess: we
+opened both archives and found the same mod inside.
+
+### "Nothing to download" instead of an empty page
+
+294 mods are published as source code only — the author never built a ready file.
+The guide used to send people to the project page, where they looked for a download
+button that was not there.
+
+The "Where to download" section now says so plainly: there is no ready file, the
+mod would have to be built by hand.
+
+### Mod names now in your language too
+
+Almost every mod has an English name: `Improved Garrisons`, `Banks of Calradia`,
+`Distinguished Service`. For anyone who does not read English the catalogue was a
+wall of Latin script — the only way to tell what a mod did was to open its card.
+
+Now the translated name sits under the original in small type. The name itself
+stays large and where it was — that is how the mod is recognised and searched for
+online — while the translation sits below it, small and dimmed: readable, but not
+competing for attention. The mod window shows it too.
+
+Translated into all six languages of the guide, and search uses it: type
+"garrisons" in your own language and mods about garrisons come up, whatever they
+are called.
+
+
+### Search now speaks every language
+
+The guide is translated into six languages, but search only understood English and
+Russian: French "russe", Turkish "çeviri", Chinese "汉化" found nothing at all.
+Search now covers all six — type in your own language.
+
+### Which game version — no more guesswork
+
+The guide reads the game version from the file name, and on ModDB that produced
+errors: a mod has its own version number, and it looks exactly the same.
+"Shokuho 1.0.0.10" was declared to work on game version 1.0, "CrashDoctor 1.7.4"
+on 1.7. Six of seven such rows were wrong.
+
+A game version now counts only when it is named next to a word about the game
+("Bannerlord 1.2.11", "for 1.3.15"), the branch actually exists, and the file is
+not older than the latest release. If nothing is said, the card stays silent
+rather than inventing: "not checked" is more honest than a guessed "works".
+
+The Old Realms is fixed to 1.3 along the way — it used to show 1.2, taken from a
+patch from the year before last.
+
+### More pictures on the cards
+
+Nexus mods had a single cover image in the guide, while the site itself carries
+plenty of screenshots. None of the ways we can ask return them — but authors paste
+the same shots into the mod description. That is where we took them from: two and
+a half thousand frames, and eighteen hundred mods no longer have a gallery of one.
+
+### Translated mods: a hundred cards came back
+
+We recognise a translation by the language at the end of its name — "RTS Camera
+Russian", "MCM 中文". But translators often write the folder name without a
+separator: `BannerKingsCNs`, `PlayerSettlementRU`, `FriendsWithBenefits.RU`. Those
+mods were not counted as translations, so the guide wrongly decided their own page
+did not belong to them: the card was left with no name, no description and no link
+to download from. There were a hundred and ten. They are back now — with a name, a
+description and an address.
+
+### Links that led nowhere
+
+Eighteen mods from ModDB carried the address of a GitHub page that does not exist.
+The culprit was our own fallback: "unknown site — assume GitHub". An unknown site
+now yields no link at all: better none than a promise that will not open.
+
+### "Works" now also tells you what the mod risks
+
+The card used to answer with a single word — "works" — and the explanation said
+"everything the mod accesses is in place". Yet a mod can ship a dozen libraries, and
+a couple of them may reach for things a newer game version has removed. The mod
+started, part of it quietly failed, and the launcher — which checks the files on your
+own disk — warned about incompatibility. The reference and the launcher appeared to
+contradict each other.
+
+Now the explanation behind "works" lists exactly what is missing and what will fail
+because of it. No more contradiction: both programs say the same thing.
+
+### Big mods are no longer left unexamined
+
+Multi-gigabyte overhauls — Realm of Thrones, Shokuho, Empires of Europe, Westeros
+Armory and some fifty more — never reached our analysis: the downloader had a 600 MB
+ceiling. For the largest mods the reference knew only what the author claimed. Those
+mods are now downloaded and unpacked in full, and their game version is read from the
+file itself.
+
+### A mod's files can now be opened
+
+The Files tab shows which releases a mod has — the main one, patches, older
+versions. There was nothing to open there: the list gave names and sizes and
+nothing else. The file name is now a link to its page on the site it comes from.
+
+### Mods from ModDB are no longer empty cards
+
+ModDB hosts large overhauls that never reach Nexus: "Shokuhō", "Bannerlord Coop",
+"Tales from the Age of Men", "The Long Night". Their cards opened empty — no list
+of releases, no line about the game version, no demand figure. Now:
+
+* **the game version is visible.** Authors put it in the file name ("Realm of
+  Thrones 7.1 for Bannerlord 1.3.15"), and where they did not, they say it in the
+  description or in a reply to players in the comments. That is where we read it;
+* **demand is counted from page visits.** ModDB does not count downloads at all,
+  so every mod from that site sat at the very bottom of any sorting — "Shokuhō"
+  with its million and a half visits included;
+* **the mod's releases are listed.** "Tales from the Age of Men" has eleven, the
+  latest from 12 February; the Files tab used to show none at all;
+* **ModDB links are dropped wherever the mod also lives on Nexus or the Workshop.**
+  Downloading works there, while a ModDB file has to be fetched by hand through a
+  browser. Where ModDB is the only place, the link and the release list stay.
+
+### Fewer duplicate mods in the list
+
+"Shokuhō" and "Shokuho", "Craft & Conquer" and "CraftAndConquer",
+"Mount&Warcraft; Reborn" and "MountAndWarcraftReborn", "The Wheel of Time mod" and
+"Wheel of Time Mod" — the same mod appeared as two rows because one name carries an
+ampersand, another a macron, a third an extra word "mod". Such pairs are now one card.
+
+The reverse was fixed too: strangers were evicted from families. "Simple Bank" was
+listed as a variant of "Birke Mod", "Economy+" as a variant of "EconomyOverhaul" —
+the author had shipped two of his mods in one archive and they stuck together.
+
+### "Made for…" now points at the mod itself, not at one of its folders
+
+Large mods come in several parts. "Realm of Thrones" has five, and add-ons for it
+pointed at a part — "add-on for ROT-Content". That row could not be opened: a part
+has no card of its own, so the reader hit a dead end. The row now names the mod
+itself: "add-on for Realm of Thrones". 346 rows were corrected.
+
+### Reworks no longer call themselves standalone mods
+
+"Noble Titles Plus", "Dismemberment Plus", "Children Grow Faster Redux" and 65 more
+called themselves standalone in one line of the card and reworks of someone else's
+mod in the next. The card argued with itself. What is proven now wins: if a mod
+reworks someone else's work, that is what it says.
+
+### Translations can now be found by their language
+
+Some translators drop their files into a folder that belongs to another language —
+a Turkish translation on top of the English strings, for instance. Such a mod was
+listed as English, and anyone filtering translations by language never found it.
+Six Turkish, eight Spanish, one Czech and one Brazilian translation were lost this
+way. The language is now also read from the mod's name, while whatever the archive
+contains stays as it is.
+
+### Three more mods stopped showing up twice
+
+"RTS Camera", "Detailed Character Creation" and "Bannerlord Coop" each appeared as
+two rows: a large mod ships several folders, and some of them carry the mod's own
+name. Such folders are now gathered into one card. "Auto Sort Modlist" and "Bannerlord
+Mod Template Creator" were merged too — they live on two sites at once and had been
+counted as different mods.
+
 ## 0.9.2 — 21.08.2026
 
 ### For your game version — the actual mod file
