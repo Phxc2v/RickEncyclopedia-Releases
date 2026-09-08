@@ -6,7 +6,534 @@
 > release goes out, the section is closed with a version and a date, and a new one
 > starts above it.
 
-## Unpublished
+## 1.0.0 — 08.09.2026
+
+### Cards no longer show another mod's numbers and author
+
+A mod can have several pages: its own, and one whose archive merely carries it along with
+a dozen others. Eight cards were taking the author, cover and download count from the
+second kind. `Danger's Recruiter` showed 135,458 downloads and the author "Ralf Keller" —
+both belong to a different mod, "Ralf's Recruiter"; the mod itself has 25,174 and the
+author Danger. `DiplomacyFixes` showed the two million downloads of `Diplomacy`. And
+`Anno Domini 1259` had the opposite problem: 2,171 instead of its own 101,843, because
+the numbers came from a small patch's page.
+
+### A requirement with the author's typo no longer leads nowhere
+
+`UIExtenderEx` — a library half the catalogue rests on — listed "Bannerlord.ButterLub"
+among its requirements. No such mod exists; the author missed a letter. The line sat
+dead: nothing to click. Such typos are now recognised and lead where they should — 34
+lines in all, including the familiar Armory/Armoury split.
+
+### Advice like "load Ambush above Ambush" is gone
+
+A load-order hint arrived from the mod's page with its beginning lost: the author wrote
+"Harmony above Training Tweak", and the card kept only "above Training Tweak" — telling
+the reader to put the mod above itself. Fifteen such lines are removed. Useful hints
+stayed: "load at the very bottom of the list" points at a place and works without a
+second mod.
+
+### "The author abandoned it" — only when they actually said so
+
+`Swadian Armoury` (747,781 downloads) carried the "abandoned" mark because of the phrase
+"updates are a bit slow since I am a solo dev". That is an apology for the pace, not a
+departure. The mark was likewise removed from a mod that is "under a remake" and one that
+is "still evolving".
+
+### "Requires StoryMode" no longer leads to an unrelated mod
+
+`StoryMode`, `CustomBattle` and `Multiplayer` are parts of the game itself — nothing to
+download. But mods on Nexus claimed those same names, and seven "requires" lines pointed
+at an unrelated mod's card, such as "She will always be your brother". A game module's
+name is now proof enough on its own, no page needed.
+
+### The "abandoned" mark comes only from the mod's own page
+
+`NPC Revamp`'s card lives on the page for version 10.0, yet the verdict "I will remove
+this page" arrived from the old 9.0 page. Same for a tattoo mod: the card is version 1.2,
+while "currently a prototype" came from the 1.0 page. Sixteen such marks are gone: words
+about abandonment belong to the work where they were said.
+
+### Smaller things
+
+* An add-on is no longer listed as a condition for the mod it was made for: `BRE Core`
+  required two of its own add-ons, which exclude each other. Such lines are now marked
+  "optional" — the link stays, the untruth goes.
+* "Required files" and "Four Prerequisites" no longer appear among requirements: those
+  are headings from a description, not mods.
+* Author lines reading "-" and "unknown" are cleared — better empty than untrue.
+
+### The card says WHERE the mod will break, not just that it will
+
+The reference used to answer "is there a problem or not". People read that as "the mod
+won't start" — while a mod usually does start, plays for hours and crashes in one
+particular place.
+
+Now every finding says **when the game will get to it**: "won't start", "will break
+loading a save", "crashes in battle", "crashes on the campaign map", "crashes when
+leaving the game", "crashes once the game reaches this part of the mod". For mods that
+hook into the game's code, the hook point is named — the very action in the game where
+it all falls apart.
+
+To make this possible every assembly in the catalogue had to be analysed again — forty
+thousand files — recording exactly where in the code each finding sits.
+
+### "This mod needs five more" — where nothing is needed
+
+`Realistic Battle Mod` — over two million downloads — listed five armour packs and their
+patches as required, each with 27 thousand. Taken at face value, the mod failed to start
+for 98.8% of the people who installed it. It starts.
+
+The fault was not invention but address. Requirements are read not only from a mod's own
+settings but from its page too — authors write in words what the settings never say. And a
+foreign page was attached to this mod: a large pack that ships `Realistic Battle Mod`
+inside itself. Its "install these mods in their needed versions" became the requirements of
+the mod it carries.
+
+Neighbours had it worse and plainer: `Serve as Soldier` required Serve as Soldier, `Hot
+Butter` required Hot Butter. A mod required itself.
+
+Words from a page are now credited to the mod **the page is about**. 1,115 such lines were
+removed across the reference.
+
+### A card no longer passes off someone else's work as its own
+
+The reference builds a card from several pages at once, and a foreign page slipped in
+easily: a submod, a patch and a translation all carry the name of the mod they were made
+for. Five separate faults came from that, all found in one evening.
+
+**A mod carried someone else's name.** The Japanese conversion `Shokuho` — two hundred
+thousand downloads — was listed as "Shokuho - Unique Lords and Ladies (obsolete)", and its
+"Author's word" tab said "this mod is no longer needed". Both the name and that sentence
+came from the page of a small add-on that installs inside `Shokuho`'s own folder. The rule
+treated a card as nameless when its name matched its folder — while that match was exactly
+the proof the name was right. Fixed for 61 mods; the 89 good renames such as "AutoBlocker"
+→ "Auto Blocker" stay.
+
+**The author's word was about a different mod.** The card promises the reader "taken from
+the mod's own page" — and for every sixth line that was untrue. Words now come only from
+the page that gave the card its name and cover.
+
+**Part of the game opened as somebody's mod.** For mods that need `StoryMode` or
+`CustomBattle` — these are the game's own modules, nothing to download — the line was
+clickable and opened a Nexus mod that replaces those modules. **1,482** lines did that.
+The same fault was fixed in folder lookup: asked "whose `SandBox` is this?", the reference
+answered "Aserai Unit Buff", and whole-game translations were shown as translations of
+that foreign mod.
+
+**One mod stood in the reference twice.** "Bannerlord Coop" appeared as two news entries
+in a row, in different sections, with one cover. The stronger of the two cards lost:
+the choice went by one platform's counter, and both share it — the page is the same. Demand
+across all platforms decides now.
+
+**A "works" verdict given without checking.** When all of a mod's code went to one card,
+the second looked like a mod with no code at all and was granted "works on every version"
+for free. Removed from 31 cards.
+
+A catalogue-wide sweep now guards against all five, across all ten thousand cards.
+
+### Captions under mod names — now for English readers too
+
+Under a mod's English name sits a short caption in the reader's language. There was
+deliberately no English one: the mod's name is already English, and a second identical line
+adds nothing.
+
+But twenty-seven mods carry names that are not written in Latin script — Chinese, Russian,
+Ukrainian — and an English reader saw unfamiliar characters with nothing underneath. They
+have a caption now.
+
+### A mod is no longer blamed for files the game never opens
+
+Our biggest mistake of the week, and the owner found it: we listed `Empires of Europe
+1700` as "won't start", while people play it — it only crashes on the way out.
+
+It turned out the reference judged a mod by EVERY file in its folder. The game does not.
+Each mod carries a list of what to run, and the game opens only that: it creates the
+object and sends it the events — "the mod has loaded", "the game has started", "the game
+is closing". Everything else in the folder merely sits there and comes into play only if
+something calls it.
+
+`Empires of Europe 1700` names nine files out of fourteen. The verdict came from two of
+the others — foreign mods packed into the bundle and not named in the list. We were
+promising a crash in an event those files will never receive.
+
+To avoid repeating the mistake, the list was read from the game's own code rather than
+by eye, across all its versions. Which turned up something else: there are two kinds of
+entry, not one — some files the game loads but sends no events to. That difference is
+exactly what decides whether a crash "at startup" can be promised at all.
+
+54,141 mod descriptions were read and 44,486 declared files found. The "won't start"
+verdict has been lifted from 178 cards across every game version. The evidence itself
+stays visible, labelled "the game does not start this part on its own" — because "the
+game does not open it" is still not the same as "harmless": a neighbouring file may call
+it.
+
+### Explanations of findings now speak every language of the reference
+
+The "what this part of the game is" explanation used to ship in Russian only: the
+translations were made but never carried into the delivery — that step was simply
+missing. All six languages are in place now.
+
+It also turned out the explanations were often not found at all. The cause was not a
+shortage of them but that a finding names a part of the game differently from our
+reference: sometimes by a method instead of its class, sometimes by an old name — half
+of those classes moved inside the game back in 2020. The explanation now sits under
+every spelling it may be asked by, and is found on the first try. 928 parts of the game
+are described, up from 704.
+
+### Plain words for what is missing
+
+The details used to say "missing `TaleWorlds.Core.CultureCode`". Clear to a programmer,
+not to anyone else.
+
+Now an explanation in ordinary words stands next to it: what this piece of the game is
+and what it is responsible for. The explanations come from analysing the game itself —
+every version of it, not just the latest: what the current game no longer has could not
+be described from it, and that is exactly what most findings are about.
+
+### The launcher finds mods that are named differently on disk again
+
+A mod can have three different names, and they need not match: the folder name, the name
+the mod announces to the game, and the human title in its own settings. For `Empires of
+Europe 1700` the folder is called "Europe 1700" with a space, while the reference records
+the mod as "Europe1700".
+
+The launcher asked the reference "do you know this mod?" using one spelling and looked for
+the answer under another — and found nothing. The install button was simply missing, in
+seven places at once: the mod list, the pack window, the updates list, "our mods", the log
+and two reports.
+
+The delivery now carries a list of every spelling: 26,289 names — how the mod calls its
+folder, how it announces itself to the game, and what it calls itself. Any of them works.
+
+### "Won't start" is now said only when it is true
+
+The reference handed out sentences far too easily. Code analysis answers the question
+"when will the game notice the code is gone" — at class load or at the call — and we
+passed that answer off as "the mod does not work". The difference is huge: the game
+looks for what is missing **at the moment it gets there**, so a mod can load, play for
+hours and crash in one single place.
+
+The worst of it was this: **a mod was sentenced for someone else's file**. Authors of
+large packs bundle whole third-party mods and libraries, and for `Empires of Europe
+1700` twelve of fifteen files are clean, while "won't start" rested on one field inside
+a bundled `CustomSpawns` — which is replaced by its fresh version in one move. The owner
+plays that mod.
+
+What changed:
+
+* **a field of a type the game no longer has** is no longer a sentence but "uncertain";
+* **a third-party file in the bundle** no longer sinks the whole mod: we say "uncertain"
+  and name the culprit, which has a card of its own;
+* in exchange, there is now a reason to say "won't start" **with confidence**: the mod
+  patches a game method this version does not have. Such mods never reach the main menu,
+  and we now see them — 76 cards on game 1.4;
+* a missing class now comes with a hint about **where it went**: more than a thousand
+  names in our evidence were not deleted but renamed back in 2020–2021. Instead of
+  "reaches for something that isn't there" a person reads "it appears this is now called
+  such-and-such", and it is immediately clear the mod was built for a very old game.
+
+### Game version 1.5.2 added
+
+Compatibility on branch 1.5 was judged by 1.5.1. Now 1.5.2 is captured and analysed —
+337,500 elements of game code — and the branch answers for the version people play on.
+
+### The card now also says what a live person saw
+
+Code analysis answers "what does the mod reach for", not "can you actually play it".
+That difference is not small: the game resolves missing code **at the moment of the
+call**, so a mod with missing pieces loads, plays for hours and crashes exactly where it
+finally gets there. For `Empires of Europe 1700` on game 1.4 we said "won't start" —
+while people play it, and it only crashes on exit.
+
+We added a list where the owner writes down what was checked by hand: whether the mod is
+playable, and if it breaks, where. **Such a record overrides our analysis**: the game
+version row takes its answer and its colour, and our verdict moves to the second line as
+the explanation of the cause. The date of the check and who made it stand next to it.
+
+The first two records are about that same `Empires of Europe 1700`: on game 1.4 it is
+playable but crashes on exit; on game 1.2 the menu loads but starting a new game crashes.
+The second one flatly contradicts our analysis, which considered branch 1.2 working — and
+it is right to contradict it: what actually happened is what should be shown.
+
+### "Voices of Calradia" is now in the reference
+
+Our new mod — a Russian voiceover for Bannerlord's native lines — now has its own card
+in the catalogue: cover, description in all six languages of the reference, and a link
+to the Steam Workshop.
+
+Until now our own cards were the launcher and the reference itself, and those are
+programs, not mods. A mod is asked something else — will it run on my game version, and
+what does it need alongside. So our cards learned to name game branches (1.2 — 1.5 here:
+the mod is data only, so there is no code in it to break when the game changes) and to
+show the game's own modules the mod must be placed below in the load order.
+
+The cover travels inside the delivery as a ready file, the same way the launcher's does:
+the picture is always there, even when the site is unreachable.
+
+### The card names the build worth installing again
+
+A "works" line sometimes came with an empty version field: the reference knew the mod
+worked on that game version but would not say which build to take. The fault was our
+own build step — it picked the newest checked build without looking at whether that
+build had a version number. Whenever the newest one turned out to be unnamed (the
+number could not be read from the site), it wiped the number already in place.
+
+Because of this the launcher could not hold a person back from a bad update: `Harmony`
+on game 1.2 said "works" but named no build, so the newest one on the site was offered
+— and that one needs a newer game.
+
+Now the number is taken only from builds that have one, together with that build's
+date. Four hundred more lines name a version.
+
+An empty field still happens — where no checked build has a readable number at all.
+That is an honest "we do not know", not "anything will do".
+
+### The card no longer contradicts itself
+
+A game-version row promised "questionable", and unfolding the list showed the very
+same mod version marked "won't start". Two answers to one question: the row's
+verdict came from the overall analysis, the file's verdict from the specific
+unpacked build.
+
+Now, if the version we suggest is in the list, the row takes its verdict: we
+recommend that file, so we answer for it. And if the suggested version isn't in
+the list, the row promises no more than the list shows.
+
+The wording is fixed too: "none of the versions start" now appears only when the
+checked versions really don't start. That red line used to show up over lists
+where every version was "questionable" or "works with caveats".
+
+### "Author's word" instead of "How to install"
+
+The tab is renamed — it holds more than installation: load order, known issues,
+hotkeys, bundled languages.
+
+The layout follows suit: labels in a narrow left column, the answer on the right
+with the author's own words beneath it — visible at once, no expanders. Fifteen
+bordered tiles read as fifteen separate things rather than one body of facts. The
+author's words are now clickable themselves: a click opens the mod page, and the
+separate "Open the page on Nexus" line under every entry is gone.
+
+### Required and optional are told apart
+
+Dependency sections used to blur into one list. Now a section is set off by a rule
+and by space, and whatever the mod cannot run without carries a coloured stripe on
+the left: "must be installed" is visible without reading the caption.
+
+### Version rows stopped jumping
+
+The mod-version and verdict columns share one width across all rows: a branch
+without a version used to collapse its column, and the coloured badge slid left —
+a staircase instead of a straight column.
+
+### Version checks are honest now
+
+A large mod ships more than one folder — Realm of Thrones ships four. The code
+lives in one of them, while the card in the guide was tied to another, so checks
+of the newest build never reached it. The result: we unpacked Realm of Thrones
+8.1.2 (August 2026) and confirmed it runs on 1.4.5, 1.4.7 and 1.4.8 — and the card
+still said "won't start", because it only saw builds from 2022. 132 of the 209
+large mods were affected.
+
+The check now belongs to the mod as a whole, the way people download it.
+
+### Checked versions: working ones first
+
+Clicking a game version opens the list of mod versions we checked and what came
+out. It used to be sorted by date, so a broken version often stood first. Now the
+ones that work are on top — that is what people came for.
+
+One more fix: the list dropped old versions even when those are exactly the ones
+that work. A release date says nothing about compatibility — a mod built for 1.2
+often runs fine on 1.5, and our check sees that.
+
+### A living mod no longer looks abandoned
+
+* "The author says the mod is abandoned" sometimes sat under the phrase "under
+  active development": the description parser confused one for the other. 47 such
+  verdicts removed.
+* The update date came from the wrong page: "Empires of Europe 1100" looked
+  abandoned since January 2023, while its page was updated in August 2026.
+* No more pairs of lines cancelling each other out: "a new campaign is required"
+  next to "safe to add to a running save".
+
+### Small things that were an eyesore
+
+* A mod no longer requires itself ("Serve as Soldier requires Serve as soldier").
+* A requirement named after the mod rather than its folder is now clickable: the
+  line "needs Detailed Character Creation" leads to the card.
+* A mod no longer argues with itself: conflicts with its own earlier version and
+  with a patch made for it are gone.
+* A mod card no longer carries someone else's name: "Bannerlord Total War Fantasy"
+  showed up as "Detailed Character Creation" — that was the name of a folder
+  inside its archive.
+
+
+### The card now tells you what to do with a mod
+
+The guide answered "will this mod run", and said nothing about the rest. Yet the
+author's own page holds far more: whether a new campaign is needed, where the mod
+must sit in the load order, whether it can be removed mid-playthrough, what it is
+known to break. All of it sat there in English, ten screens deep, and nobody read
+it.
+
+Now we read it — across every site at once: Nexus, the Steam Workshop, README
+files and release notes on GitHub, ModDB. And we lay it out in two places.
+
+**Before you install.** Beside our own verdict there is now a short list of the
+things that change your decision: a new campaign is required, old files must be
+deleted first, the mod only works in the campaign, it behaves differently on Xbox
+or Game Pass, it does nothing on its own and exists only for other mods.
+
+**How to install.** A new tab with the details: whether files need unblocking
+after extraction, how early to load it, how it is configured, which key opens it,
+what the author admits is broken, what you must not do in game, whether removing
+it breaks the save, which languages ship inside.
+
+Under each line stand the author's own words. This is his word, not our check,
+and it says so.
+
+### You can see where a requirement comes from
+
+Requirements used to come from one place only — the mod's own manifest file. For
+AD1259 that file is empty, while the page lists eight required mods, Realistic
+Battle Mod among them; without it the game crashes on entering the campaign every
+time. The guide said nothing.
+
+There are three sources now: the mod's file, the "Required items" mark in the
+Steam Workshop, and the author's words on the page. Requirements went from 6,342
+to **10,149**.
+
+Each one now says where it came from. What we read ourselves carries no note —
+that is the guide's ordinary answer; what we repeat after somebody is marked:
+"stated by the author on the mod page", "marked by the author in the Steam
+Workshop".
+
+### A file is no longer offered for a mod it does not contain
+
+One page often carries several different mods. "Templar Armor" has three, each in
+its own file: 90, 93 and 209 megabytes. Every card used to offer every file on
+the page — you picked one mod and downloaded another, three times heavier. Fixed
+for 487 cards.
+
+### A mod the author walked away from
+
+If the author said he no longer develops the mod, the card now says so. His
+guesses that it "probably does not work" are not shown: whether it works is
+answered by the version bar, and that comes from reading the files.
+
+### More archives read
+
+We take code and manifests out of an archive, but data files were only taken from
+one expected folder. Translations and item packs put theirs elsewhere — straight
+into another mod's folder — so such mods looked empty to the guide: they were
+downloaded again on every pass and yielded nothing every time. There were fifteen
+hundred such archives.
+
+### "How to install" now speaks your language
+
+The tab answers "what to click", "where to put it", "what it costs you" — and it
+answered in English: the kind of note was translated, the note itself was not.
+For a reader without English the tab said nothing at all.
+
+The notes are now translated too, into all six languages of the Encyclopedia.
+The author's own words are still there, folded under the translation as "the
+author's own words on Nexus" — open and check any time.
+
+The tab also became readable: the kind of note on top in small type, the answer
+itself in large. It used to be the other way round.
+
+### Dependencies: what to install, and what is merely load order
+
+A mod declares two different lists: what it needs, and what it wants to load
+after. The Encyclopedia merged them and labelled the result "requires". That was
+a lie: "Crash Doctor" showed seventeen "dependencies" while requiring none of
+them — all seventeen were load-order wishes.
+
+The list is now split: "you need to install", "if you have these — load after
+them", "parts of the game itself". And a plain line on top says how many hard
+requirements there actually are.
+
+### Requirements from the mod page stop getting lost
+
+Authors list the required mods on their page. We recognised each one by its
+link — and half the list vanished: "Anno Domini 1259" kept nine of thirteen.
+Several rows in a row often share one link, and half the mentions have no link
+at all.
+
+Mods are now recognised by name, with the link as a hint. **3,320 links** were
+recovered: 1,741 hard requirements, 1,169 optional, 399 incompatibilities. When
+we have no card for a mod, the requirement is still shown — as a line without a
+link: knowing it is needed matters more than being able to click it.
+
+Third-party launchers were removed from requirements: that is a way to install,
+not a mod the game needs.
+
+### The answer right under the title
+
+The card now opens with a row of short badges: does the mod work on your branch
+of the game, how many mods you still need, can it be added mid-playthrough, does
+removing it break the save. That used to take three tabs.
+
+### Tabs grouped by four questions
+
+There are ten of them and all are needed. You now pick the question first —
+"about", "compatibility", "inside", "where to get it" — and only the tabs that
+answer it are shown. A tab with a severe conflict or an author's warning carries
+a mark.
+
+### Cards no longer freeze on huge mods
+
+Overhauls have up to two thousand conflicts with other mods, and the card drew
+them all at once — the window froze for a minute. It now shows the first two
+hundred, the heaviest ones, with a "show the rest" button underneath.
+
+### You can see what a mod comes with and what it carries
+
+Many mods ship inside someone else's archive and are not downloaded separately.
+Only the database knew that. The card now has two lines — "comes bundled with…"
+and "ships bundled inside…" — both clickable.
+
+### Database version and date in plain sight
+
+The bottom line of the main window now says which database is installed and when
+it was built. The program and the data update separately, and without this line
+there was no way to tell how fresh the catalogue is.
+
+### Updates stop offering an older summary
+
+The "What's new" window compared its summary with the server copy by checksum
+only — and always found an "update", offering to replace a fresh summary with an
+older one. The comparison now goes by release number.
+
+### An "About the game" section: how many mods per version
+
+The game ships in versions, and the first question before a playthrough is which
+version to play so that mods work. Steam lists the versions; nobody puts a number
+next to them.
+
+The Encyclopedia now has an "About the game" section. It lists the versions of
+Mount & Blade II: Bannerlord, the release date of each and, above all, how many
+mods we know of for it. Below is the full list of Steam branches, service ones
+included: 47 of them, each with the date it was last built. The section speaks all
+six languages of the Encyclopedia.
+
+### Fifteen hundred mods stopped being nameless
+
+We read a mod's service file as text in one single encoding. Authors write in
+several: Chinese, Turkish, older Russian ones. Foreign bytes quietly turned into
+garbage, and the mod stayed nameless, versionless and without requirements - with
+no error at all, the file "read fine".
+
+The encoding is now detected. **8,014 files** came back.
+
+### Four times as many conflicts between mods spotted
+
+Mods change the game on the fly by hooking into its code. When two of them hook
+the same place, they clash and the game behaves unpredictably. We used to see
+12,269 such pairs; now it is **53,538** - the analysis now finds hooks written
+inside the code itself, not only those declared up front.
 
 ## 0.9.4.3 — 26.08.2026
 
