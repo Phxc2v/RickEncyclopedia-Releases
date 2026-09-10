@@ -6,6 +6,164 @@
 > release goes out, the section is closed with a version and a date, and a new one
 > starts above it.
 
+## Unpublished
+
+## 1.0.1 — 10.09.2026
+
+### "Features" in the left panel
+
+A fifth filter group, with checkboxes: in-game settings (MCM), hotkeys, multiplayer, no
+new campaign needed (author's word), open source, no libraries needed, has a gallery.
+Several checkboxes combine with "and": tick "MCM" and "no new campaign" and you get mods
+that have both. Counters follow the current selection, like the categories do.
+
+### Three hints on first launch
+
+Above the results, a short note is shown once: what the two roots at the top are, what a
+mod card answers, and where to search. "Got it" removes it for good.
+
+### Text size
+
+Settings now have "Text size": 90 %, 100 %, 115 %, 130 %. Applies immediately, to all
+windows.
+
+### Small things in the results and the card
+
+Covers in the grid show a "▣ 6" badge for mods whose gallery has something to look at.
+Groups in the left panel collapse with a click on the header, and remember it. `Ctrl+W`
+closes a mod card.
+
+### The window remembers where and how it was closed
+
+Size, position and "maximized" are restored on the next launch. If the monitor the window
+was on has been unplugged, it opens centred rather than off-screen. For the launcher, a
+`--family 1.4` start key was added: the card and the results open straight on the
+player's profile line.
+
+### Under a red verdict — where to go
+
+If a mod will not start on your line, or is doubtful, and it has a rework that does work on
+that line by code analysis, the card says so directly: "A rework works on 1.4: Noble Titles
+Plus" — with a link. Translations do not count as successors, and an author's word
+"works" is not proof enough to send you to another mod.
+
+### Above the dependency list — how much you will need in total
+
+One line above the list: "You will need 4 in total: Harmony, ButterLib, UIExtenderEx, Mod
+Configuration Menu — 41 MB". Requirements of requirements are counted too, for the chosen
+game line; what the encyclopedia does not have is named separately; the size covers only
+what has a file for that line.
+
+### The card shows what this mod is most often installed with
+
+Below "More by this author" there is now "Most often installed together": up to seven
+mods that sit next to this one in Steam Workshop collections, with the number of
+collections for each. The header says how many collections hold the mod itself. Scaffolding
+present in nearly every collection (Harmony, ButterLib, MCM, UIExtenderEx) is left out —
+it says nothing. The block only appears where there are enough collections.
+
+### The encyclopedia opens on your game version
+
+Only when there is a single game on disk. Several copies found — the line is not picked
+automatically: the note lists the versions found and asks you to choose. "No libraries
+needed" no longer lists the libraries themselves (Harmony, ButterLib, MCM). The "▣ 6"
+badge on a cover has a tooltip: that many screenshots in the card's gallery.
+
+#### As first designed
+
+
+Every launch used to start on "any version", and the line had to be picked again.
+The encyclopedia now finds the installed game itself — through the launcher, if it
+sits next to it, or through Steam — and opens on its line, with a note "Found
+Bannerlord 1.4.7 — showing mods for the 1.4 line. Change". The line you pick is
+remembered; in Settings you choose what to do at startup: take it from the installed
+game, use the last chosen one, or always "any".
+
+
+### Mod translations now have their own pages
+
+The Russian translation of Realistic Battle Mod is on Nexus and has been downloaded
+seven thousand times — yet the encyclopedia did not have it. Nor 330 others:
+translations into Russian, Turkish, Chinese, Polish and Ukrainian, plus third-party
+fixes that keep mods running on newer game versions. They were in the database, but
+without a card of their own. You could not find them by search, open them, or download
+them.
+
+The reason is simple and annoying. A translation almost always arrives as an overlay:
+the archive holds a folder named after the mod being translated, and the files go inside
+it. The encyclopedia read that folder name and concluded "this is the same mod" — after
+which the translation dissolved into the original's card as a single service line. Each
+such work now has its own card: its own title, author, download count, cover, a
+description in six languages and, above all, its own download button.
+
+### 150 cards are no longer nameless
+
+The flip side of the same mistake. A mod that IS itself a translation or a fix — say
+"MCMv3 Русский" with 35,818 downloads — stood empty in the encyclopedia: a folder name
+instead of a title, no author, no cover, no numbers. The rule "a translation page does
+not describe the mod" also hit mods for which such a page is the only one they have, and
+their own. The encyclopedia now tells the two cases apart.
+
+### Translations say which language, and what they go on top of
+
+A translation card now carries its language and the mod its files go into. Neither is
+guessed from the title: both are read from the archive itself.
+
+### A mod's card no longer wears the face of its continuation
+
+Popular Nexus mods have third-party continuations next to them — "Harmony Updated v1.4.6",
+"Agriculture Estate Updated", "Updated DismembermentPlus". The encyclopedia treated the word
+"Updated" as noise, and when the continuation had more downloads, the mod's card took its
+author, cover and numbers: Harmony showed 18,993 downloads instead of 6,322,047,
+Dismemberment Plus 1,919 instead of 1,469,832. A continuation is now a separate work with
+its own card, and the mod shows its own page. 35 cards got their face back; 87
+continuations got cards.
+
+### Parts of one mod are called by their own names
+
+A large mod often ships as several folders — core, map, an RBM patch — and all of them bore
+the mod's name: four "Realm of Thrones" cards in a row, the RBM patch of Open Source Armory
+was simply "Open Source Armory". A part now takes its name from its own manifest: "Open
+Source Armory: RBM Patch", "ROT-Dragon", "HandleEncounterPatch". 272 cards renamed.
+
+### Translations that edit game data keep the "translation" label
+
+The Russian localisation of Realm of Thrones and the Polish translation of the game write
+translated names straight into troop and settlement records — and by the number of such
+records the encyclopedia decided it was a standalone mod and filed it under "Troops". When
+both the model and the name say "translation", game records no longer override them.
+
+### A mod's description comes from its own page, not from its translation's page
+
+The description of "Auto Resolve Rebalanced" (301,445 downloads) retold the page
+"Auto Resolve Rebalanced Ru 1.34.1 (Vortex support)" — and the mod was listed as a
+translation of itself. Foreign-page filtering now shares one rule with the build itself;
+262 descriptions rewritten.
+
+### A patch's requirement is not the mod's requirement
+
+"Horse Caparisons" "required" RBM — the line came from a third-party compatibility patch
+page, "Horse Caparisons fix 1.2.12 and RBM". A page about someone else's work on a mod no
+longer contributes requirements to the mod.
+
+### Some Steam Workshop mods can also be downloaded from Nexus
+
+Some mods listed a single address — the Steam Workshop, which requires being signed in
+to Steam. Where the very same archive was also found on Nexus, a second address has been
+added to the card. The match is made on file contents, not on names: "Improved Garrisons
+RUS" from the Workshop and "Russian Translation Improved Garrisons" from Nexus are named
+alike but are two different works by two different people.
+
+## 1.0.0.1 — 08.09.2026
+
+### Our mod's cover is back in the update
+
+The update package shipped a month-old set of covers — from a folder that stopped being
+refreshed on 7 August. It looked fine from the outside: covers are there, 879 of them,
+everything in place. But none of the newer ones were included, and the cover of our own
+mod "Voices of Calradia" never reached anyone: it showed up in the test build and
+disappeared after updating from the server.
+
 ## 1.0.0 — 08.09.2026
 
 ### Cards no longer show another mod's numbers and author
