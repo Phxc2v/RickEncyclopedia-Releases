@@ -63,10 +63,26 @@ it was made for.
 * **what the mod is based on**, when it is a translation, a fork or a re-release: the
   original's name, a link to its card and a short description — so that "an updated
   version of the original" means something to a reader who never heard of the original;
-* **a description in five languages** — Russian, English, Turkish and two Chinese.
+* **a description in six languages** — Russian, English, French, Turkish and two Chinese;
+* **what this mod is most often installed with** — neighbours in Workshop
+  collections, without scaffolding like Harmony that everyone has;
+* **how much you will need in total** — one line above the dependencies: "4 mods —
+  41 MB", requirements of requirements included;
+* **where to go if the mod is broken** — under a red verdict the encyclopedia names a
+  rework that does work on this line.
+
+**Translations and continuations are cards of their own.** A Russian localisation, a
+Polish translation, someone else's "… Updated" continuation — each has its own card
+with its own download button, its language and the mod it goes on top of. They used
+to hide inside the original's card.
 
 **Cards open beside each other**, up to ten at once: put a mod and its dependency side
 by side, or compare an original with its translation.
+
+**The encyclopedia opens on your game version** when there is a single game on disk;
+with several copies it lists them and asks you to choose. On the left, next to the
+sections, there are "Features": in-game settings, hotkeys, no new campaign needed,
+open source, no libraries. Text size is adjustable.
 
 **Steam Workshop collections**, with their contents analysed and rated: what will fail
 to install, what will clash, and which game version the set was built for.
