@@ -82,7 +82,8 @@ by side, or compare an original with its translation.
 **The encyclopedia opens on your game version** when there is a single game on disk;
 with several copies it lists them and asks you to choose. On the left, next to the
 sections, there are "Features": in-game settings, hotkeys, no new campaign needed,
-open source, no libraries. Text size is adjustable.
+open source, no libraries. Text size is adjustable, and the look is a choice: the same
+four skins as the launcher.
 
 **Steam Workshop collections**, with their contents analysed and rated: what will fail
 to install, what will clash, and which game version the set was built for.
