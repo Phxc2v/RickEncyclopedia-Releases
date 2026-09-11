@@ -8,6 +8,26 @@
 
 ## Unpublished
 
+## 1.0.2 — 11.09.2026
+
+### A choice of looks — the same skins as the launcher
+
+Settings now has an "Appearance" section: Calradia (as before), Cinematic, Bannerlord
+and Verdant — the same set as the launcher, looking the same. It switches at once, in
+every open window, and is remembered. The skins are built into the program itself —
+nothing to put next to it, nothing to lose.
+
+Along the way three places were found and fixed where a window asked for a colour that
+did not exist: the "Before you install" box on the card and the version rows in "About
+the game" had no backing plate.
+
+### A mod's description copies with one button
+
+Next to the "in the author's words" caption on the card there is a small "copy" button:
+the mod's name and its description in the program's language go to the clipboard,
+without markup. A tick for two seconds confirms it copied.
+
+
 ## 1.0.1 — 10.09.2026
 
 ### "Features" in the left panel
