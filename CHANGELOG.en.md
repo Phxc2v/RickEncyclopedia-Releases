@@ -8,6 +8,122 @@
 
 ## Unpublished
 
+## 1.0.3.1 — 21.09.2026
+
+### Requirements and card names — nothing borrowed
+
+Some cards listed requirements the mod does not have: "Improved Garrisons" (2.2M
+downloads) "required" Bannerlord Co-op, six mods required a YLCM_original with 57
+downloads, "Captivity Events" required Hot Butter. All came from other people's pages: a
+same-named mod by another author on the Workshop, translation pages saying "install the
+original first". A page with a hundredth of the card's demand no longer feeds it, the word
+"original" is no longer taken for a name, and conditions like "V1.0.1 or lower version"
+are no longer requirements. Page data is recomputed on every build instead of accumulating,
+so an old mistake cannot outlive its fix.
+
+Names are the mod's own too. A mod's main card used to carry the name of someone's fix
+shipped in the same folder: "Xorberax's Cut Through Everyone Fix", "Settlement Icons -
+Jiro's Fix", "Player Settlement (ToR Hybrid)", "Danger's Recruiter" by Ralf Keller,
+"Anno Domini 1259 continued". 31 cards got their own page's title. At equal demand the mod
+itself now heads its family rather than its patch ("Calradia Factions Enhanced", "Proton
+Garrisons"), and 154 patches for Realistic Battle Mod now point at RBM itself rather than
+one of its variants.
+
+### Cards now show dependencies that used to be missing
+
+The encyclopedia reads what a mod requires from the mod's own manifest file. Until now it
+only did so for mods whose manifest is published on GitHub — fewer than one in five. For
+the rest the manifest sat inside the downloaded archive and was never read for
+dependencies: the card stayed empty even when the mod cannot start without Harmony or the
+War Sails expansion. The "Warlords Warfare RBM" submod did not list its required RBM, and
+"Warlords Battlefield War Sails Edition" did not list War Sails itself — you downloaded
+198 MB and found out afterwards.
+
+Archive manifests are now read too, with the same care as page text: only archives from
+the mod's own page count (a third-party bundle cannot pin a dependency on a mod), and only
+the newest file for each game branch (old files often require what new ones no longer
+need). The second manifest block, where modern mods declare Harmony, ButterLib and MCM
+settings, is now read as well — it used to be skipped. The gap was found by the partner
+launcher.
+
+### Quieter above the results, tidier menu
+
+The legend "the bar under the description — game versions…" no longer sits above the
+results permanently: it stays until you press "got it" on the first-run tips, then lives in
+an ⓘ circle next to the count (each cell of the bar still has its own tooltip). The header
+menu icons — news, favourites, packs, about the game, settings, support — are now drawn in
+the theme's colour instead of coloured emoji that ignored the skin.
+
+### Feature filter "works on the chosen version"
+
+In the left panel, under Features, a new first entry shows only mods whose code analysis
+gave a green verdict for the game version picked in the top bar. Until now the version only
+removed what was known to be broken, while "works", "questionable" and "unchecked" were
+mixed together — now you can keep just "works".
+
+### Arrow keys walk the results
+
+Press ↓ or → and a gold frame lands on the first card; arrows move across the grid,
+PageUp/PageDown scroll by a screen, Home/End jump to the ends, Enter opens the card, Esc
+drops the frame. From the search box too: type, press ↓, and browse what you found without
+reaching for the mouse. Ctrl+W still closes an open card.
+
+### Mods from multi-module pages found their own pages
+
+Many Nexus authors ship several modules in one archive — the mod itself, an RBM patch, a
+couple of variants. For such pages the encyclopedia compared each module's name against…
+the page *number*, found nothing, and treated the page as somebody else's bundle, leaving
+the module without it. "Kult of the Kallipygos" (205k downloads) wore the name and cover of
+a neighbouring mod by the same author, "Viking Storm" was called after its own "Armoury",
+"Tetsojin" after a "Pike And Shot" page. The comparison now uses the real page title, plus
+a match on significant words: 685 links added, 37 cards got their proper face back.
+
+### A newer page no longer wins by accident
+
+When a mod has several pages (original, "updated version", translation), the card takes
+its name and numbers from the page with the strongest proof of the link. An archive from the
+page itself is the strongest proof, but the encyclopedia forgot to raise the weight when the
+page was already known by a mere link. "Kill Bandits Raise Relations" (386k) was therefore
+named after "…Localizable" with 1,500 downloads. Fixed, along with 796 such links.
+
+### Small card fixes
+
+* A variant from the same page no longer takes the family lead from the mod named exactly
+  like the page ("Vexillum" vs "Vexillum-SpearRework").
+* A mod's "base" cannot be younger than the mod: "BloodMod" (2020) is no longer an add-on to
+  "More Blood" (2024).
+* A mod is no longer called a translation of its own repack (No Fog Of War, Cheats — 95 cards).
+* A name like "HelmetHair" is no longer read as a "Thai translation" because of the letters
+  "thai" inside it.
+* Old 2020–2022 files marked "for 1.9.0" are back in the early-access branch e1.9 (84 files),
+  and the news no longer says "now works" and "stopped working" about them at once.
+* Requirements on the game's own modules ("needs SandBoxCore") show again: the build was
+  dropping them together with game-code stubs (1,825 rows on 900 mods).
+* "Global mods" now means it: a new world, setting or map with its own factions (Realm of
+  Thrones, Shokuho, Europe 1100). Collections of small tweaks, armouries, fix packs and
+  servers moved to their own sections — 121 cards, among them Xorberax's Legacy (1.4M),
+  Calradia At War, Vlandian Steel Reforged. The owner asked about Xorberax's Legacy.
+* Game branches 1.6–1.9, which never shipped, are no longer shown on files: those were mod
+  version numbers taken for the game's, or early access without the "e".
+* Language codes at the end of a name ("AutoBestRoleRU", "Shokuho_CNt", "(RUS)") read as a
+  translation; and a module whose folder holds only game strings is no longer a translation
+  unless its name or page says so (Jack Of All Trades' Banner Kings compatibility).
+* The core of The Old Realms is described by its own Workshop page, not by a French patch.
+* Eight Russian descriptions lost stray Latin letters inside words; 922 translations got the
+  mod's name back in Latin script instead of a word-for-word translation.
+* Cards that live only in the Steam Workshop (831 of them) now get author, description and
+  cover from their own page: until now they said "author unknown" and stood empty, and the
+  core of The Old Realms (498k subscribers) was described by a French patch from Nexus.
+* Requirements from mod pages are recognised more widely: "Mod Configuration Menu (MCM)",
+  "Hot Butter Mod", "The Old Realms - Core", "UIExt" now lead to their cards, and "War
+  Sails DLC" / "Naval DLC" honestly count as the game's expansion. Dead "needs a mod — go
+  find which" rows dropped threefold (246 → 77).
+* Language codes in a name — "Patch FR", "Bandit Armors (RUS)", "Shokuho_CNs" — read as a
+  translation (419 cards), and such pages no longer lend their face to the original.
+* A mod's own page named like a patch or a re-release is no longer taken away from it just
+  because another module sits in the same archive ("Changing Cultures - Updated for ROT",
+  "Swadian Armoury RBM Patch" — both patch variants).
+
 ## 1.0.2 — 11.09.2026
 
 ### A choice of looks — the same skins as the launcher
