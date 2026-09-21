@@ -8,6 +8,30 @@
 
 ## Unpublished
 
+## 1.0.3.2 — 21.09.2026
+
+### The counter line adds up
+
+The line under the results — "cards … of … records · mods · translations · add-ons ·
+tools" — did not sum to the total: rebuilds (forks) and asset packs were only in the hover
+tip, so 298 records seemed to go missing. Rebuilds now count as mods and asset packs as
+add-ons; the tip still names them separately.
+
+### Last-update date from every page of the mod
+
+A card took its last-update date from one page only, while the changelog came from all of
+them. The result was "not updated for a long time" right above a change from the day
+before yesterday: "Intrigues" looked at a 2021 page while its second page was updated on
+15 September; "Character Export Import" had a fresh update on the Steam Workshop. The date
+is now the newest across the mod's own pages and history — 888 cards got the right date,
+503 of them dropped the "long idle" notice.
+
+### Our products — one card each
+
+"Voices of Calradia" appeared three times: our card, the Nexus page card and the Steam page
+card. Our product now absorbs all its own pages and their numbers (283 Workshop
+subscriptions, 249 Nexus downloads).
+
 ## 1.0.3.1 — 21.09.2026
 
 ### Requirements and card names — nothing borrowed
