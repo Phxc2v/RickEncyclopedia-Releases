@@ -8,6 +8,39 @@
 
 ## Unpublished
 
+## 1.0.3.4 — 22.09.2026
+
+### Requirements come from the mod's current file, not old ones
+
+The card for "The Original Player Switcher" listed BannerLib as required, and the red
+warning above a mod set said "needs BannerLib, and it is not enabled". BannerLib was
+needed in 2021–2023; from version 1.12 it was replaced by ButterLib, and today's file
+does not know it. The reference read the manifests of every uploaded file, including old
+ones for long-gone game versions, and merged their requirements. Requirements now come
+from the page's main file — the one a person actually downloads. Across the database 129
+cards carried such stale requirements (Harmony 45, ButterLib 23, MCM 21, UIExtenderEx 15).
+
+### A mod picked up by someone else gets its own card, not a row on another's
+
+On the same card the Nexus row in "Where to get" led to BUTR's Player Switcher — a
+different author, a 2023 version, the same Module.Id: BUTR once picked up the code and
+published it under their own name. The reference treated both pages as pages of one mod:
+Cheyron's card showed BUTR's address, game branches from BUTR's GitHub builds and BUTR's
+change history. Now a page by another author with the same Module.Id is a separate card,
+and in the mod's family it stands as a fork (or, if it is older, as the original with the
+mod as its continuation). Across the database: 225 such pages (BUTR's Player Switcher,
+Party AI Controls 1.3.X, Settlement Icons for 1.3–1.4, Attribute Per Level (e1.7.2 –
+1.3.15)…) and 12 GitHub repositories of the same foreign authors. Foreign forks are
+removed from "Where to get" — except on cards that would otherwise have no address left.
+
+### "Where to get": own page first, Nexus pages show version and date
+
+The mod's own page (1.16.0, June 2026) stood below the foreign one and without a version:
+5,409 of 7,599 Nexus pages had no version or date in the list at all. Now the card's own
+page goes first, GitHub comes after the download sites (a repository more often leads to
+code than to a ready file), and every Nexus page shows the version and date from the page
+itself.
+
 ## 1.0.3.2 — 21.09.2026
 
 ### The counter line adds up
