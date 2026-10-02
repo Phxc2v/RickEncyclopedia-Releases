@@ -8,6 +8,68 @@
 
 ## Unpublished
 
+## 1.0.3.7 — 02.10.2026
+
+### Updates download only what changed
+
+Every database update used to mean downloading the whole thing — almost 400 MB, even when a
+hundred mods had changed. Now the encyclopedia compares its database with the new one and
+fetches only the pieces that differ: usually 10–30 MB. The program itself updates the same
+way: a few megabytes instead of the whole 75 MB archive.
+
+If something goes wrong — the connection drops or the mirror does not answer — the update
+picks up where it stopped next time, and if the new way is unavailable altogether, the
+encyclopedia downloads the full file as before. Everything downloaded is still checked
+against our signature.
+
+### Requirements no longer point to someone else's patch or translation
+
+A player installed five The Old Realms mods, and the launcher offered to disable three of
+them: the translation and Lore-Hardcore supposedly required "Real Army - Warhammer (The
+Old Realms) Patch" and the French TOR patch. The mod page simply said "requires The Old
+Realms", and the reference found that name in brackets inside the patch's title. Now words
+in brackets of a card's title are not taken as its second name, and "The Old Realms" and
+"The Old Realms: War in the Mountains" lead to the TOR core. A requirement the author wrote
+as a mod folder name, such as "TOR_Armory", leads to exactly that folder.
+
+We then checked every requirement taken from mod pages and found a few more of the same
+kind:
+
+* 25 mods "required" the Russian translation of MCM instead of MCM itself, and about
+  twenty more required someone's translation instead of the original (Ancient
+  Civilizations, Nightmare Sails, Ben's Ultimate Armory and others). A translation is no
+  longer found by the original's name.
+* "War Sails / NavalDLC" led to the Volley patch, while it is the game's own expansion.
+* "Requires CustomSpawns" led to Better Time, its neighbour on the same Nexus page. Now the
+  mod the name speaks of is chosen among the mods of one page.
+* A match in the middle of a word no longer counts: "RTS Command" does not lead to "RTS
+  Commander Doctrine".
+* Third-party game launchers are no longer listed among mod requirements (121 entries).
+* If an author names a required mod on the page and the reference does not know such a
+  mod, the requirement stays on the card but is no longer treated as mandatory: there is
+  nothing to check it against, and a red "mod required" made people disable working mods.
+
+### A mod no longer "requires itself"
+
+"Bannerlord Expanded - Settlement Interactions" showed a red warning: "needs Bannerlord
+Expanded - Settlement Interactions 1.4.5, and it is not enabled" — though that is the very
+same mod. Someone re-uploaded it to Nexus for game version 1.4.5, and one old file of that
+upload has the mod folder name misspelled, missing the final "s". The reference made a
+separate card for the misspelling and attached the Turkish translation's note "install
+Settlement Interactions first" to it. Now, when a link on a page leads to the mod itself
+and the name matches a card that differs from it by a letter or two, the link wins. 13
+more links that pointed to old mod names instead of current ones were fixed the same way
+(Ranged Weapon Overhaul, Empires of Europe 1700, Sling Bullets and others).
+
+### Translations no longer appear in "Where to get" as the mod itself
+
+That Turkish translation was titled simply "Bannerlord Expanded - Settlement Interactions
+v1.2.10", with no word about a language, and the reference took it for one more page of
+the mod itself. Now we look inside the archive: if it holds only language files and not
+the mod, it is a translation and gets its own card. This found 18 translations, among
+them a Turkish one for Improved Garrisons and Polish ones for MCM, RTS Camera and
+Dismemberment Plus.
+
 ## 1.0.3.4 — 22.09.2026
 
 ### Requirements come from the mod's current file, not old ones
