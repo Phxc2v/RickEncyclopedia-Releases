@@ -20,7 +20,7 @@ To remove it, delete the folder.
 
 ## What is in it
 
-**Search across nine thousand mods**, filtered by game branch, category, language and
+**Search across twelve thousand mods**, filtered by game branch, category, language and
 demand. The mod itself comes first, not the things built on top of it: the name you
 typed rises to the top, and it is recognised however you write it — "Banner Kings"
 finds "BannerKings", and "RBM" leads to "(RBM) Realistic Battle Mod" rather than to
@@ -31,7 +31,7 @@ somebody else's mod; **translation** — a translation and nothing more.
 **The name in your language, too.** A mod is called `Improved Garrisons`, and right
 under that name, in small type, stands its translation. The name itself stays large —
 that is how the mod is recognised and searched for online — while the translation
-reads at a glance without getting in the way. Six thousand mod names, in all six
+reads at a glance without getting in the way. Seven and a half thousand mod names, in all six
 languages of the guide.
 
 **Search in your own language.** Mods are named in English, but you can look for them
