@@ -8,6 +8,98 @@
 
 ## Unpublished
 
+## 1.0.3.22 — 09.10.2026
+
+### New database: 537 new mods and checks for game version 1.5.4
+
+We went through Nexus, the Steam Workshop, ModDB and GitHub again: the encyclopedia now lists 12,046 mods,
+537 of them new. Every mod was rechecked against game version 1.5.4, the one Steam currently installs. If a
+mod relies on something the game no longer has, it is marked as not starting on that version.
+
+Also fixed:
+* Diplomacy is listed as the official mod again, not a fork: only three old archives out of a hundred and
+  sixty called it a fork, and we took another author's rework on the Steam Workshop for the mod itself.
+* A translation that needs several mods to work now translates only the one named in its title. One
+  Chinese translation used to count as a translation of eight mods at once.
+* "Our mods" showed the encyclopedia twice — its Nexus page was a separate card. It is now part of the
+  main one.
+
+### Our programs' window shows all downloads, not just Nexus
+
+The catalog tile of the launcher, the encyclopedia and Voices of Calradia showed the right total, but the
+mod window showed less: it only added Nexus downloads and Steam subscriptions. The encyclopedia showed
+zero. The window now counts GitHub downloads too: encyclopedia —
+1,228, launcher — 2,216, Voices of Calradia — 849 with Steam subscriptions. The tooltip lists each site on
+its own line.
+
+### A mod card opens without freezing, windows dim the catalog smoothly
+
+Clicking a mod used to freeze the program for a moment while the encyclopedia fetched the mod's
+details — it looked as if the click did nothing. Now the details are read in the background: the
+program responds at once, the cursor shows the card is opening, and a second click won't open a
+duplicate. The dimming behind windows (favorites, mod lists, news, settings, "About the game",
+support the project) now fades in and out smoothly and is there for all of them.
+
+### No more "unofficial version" under a mod's name without a reason
+
+Many mods carried the line "This is an unofficial distribution of the mod" under their
+name — even mods uploaded by their own author, our Crash Doctor among them. When
+retelling a mod's page we added that phrase almost out of habit. Now it stays only when
+the author says they are posting someone else's work: a re-upload, a port, a continuation,
+with permission. The false note is gone from about 1,400 mods; the real one stays on 111.
+The change arrives with the next database update.
+
+### English, French, Turkish and Chinese: hints no longer run together
+
+The program's translations were losing line breaks, so sentences were glued together
+without a space — for example "Database unreadable.If it's being rebuilt…". Line breaks
+are back in every language. French also got the lines that were still in English
+(the collection card, "Mod removed from Workshop" and others), and game "records" in
+the conflict explanation are no longer called save files.
+
+### A big mod is now one card
+
+Many mods consist of several parts: Realm of Thrones has five, Realistic Battle Mod has eight,
+The Old Realms has three. Each part used to be a separate card in the catalogue, and it was
+unclear what to install. Now such a mod is one card under its real name, with a “Components”
+block inside: which parts are required, which are optional and which game versions each one
+works on. Clicking a part opens its card.
+
+### Mod family on the first tab, translations separate
+
+The “Translations and variants” tab mixed everything together: the original, forks and dozens
+of translations in one list, and few people found it. Now the mod family — the original, forks and
+other versions — sits on the first tab, right above the description, so you see at once what else
+exists for this mod. Translations into other languages have their own “Translations” tab, most
+downloaded first.
+
+### You can see the catalog loading
+
+When you switch sections, the cards fade to black and white at once and a loading bar runs
+above them; colour returns when the new ones arrive. Before, it looked as if the app had simply
+frozen. The new cards also arrive faster now.
+
+### You can now support us on Boosty too
+
+The “Support the project” window has a third button — Boosty: a subscription or a one-time
+payment with a card from any country, no Telegram needed.
+
+### Contacts
+
+Boosty and email are now in the bottom bar. Clicking “Email” copies coderickhub@gmail.com
+and opens your mail app if you have one.
+
+### “Project frozen” is no longer shown by mistake
+
+If a mod had an old archived repository next to a live one, its card said the author had frozen
+the project — The Old Realms was one such case. Now this is shown only when the mod has no live
+pages left.
+
+### Wrong notes fixed on two mods
+
+Better Exception Window and Esoteric Knowledge were described as “a version of the Harmony
+library”, which is not true. The wrong notes have been removed.
+
 ## 1.0.3.7 — 02.10.2026
 
 ### Updates download only what changed
