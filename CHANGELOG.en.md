@@ -8,6 +8,15 @@
 
 ## Unpublished
 
+## 1.0.3.23 — 09.10.2026
+
+### Only new mods, in one click
+
+"Features" now has a "new in the encyclopedia" filter. It keeps only the mods we added in the
+latest database update — not the ones that were updated, only the new ones. It works together with
+search, sections, game version and the other filters: for example, you can see only new troop mods
+that run on your version. The full list of changes is still under "What's new".
+
 ## 1.0.3.22 — 09.10.2026
 
 ### New database: 537 new mods and checks for game version 1.5.4
